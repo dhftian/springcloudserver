@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: order-provider
+
+#eureka设置参数
+eureka:
+  client:
+    #是否拉取服务列表
+    fetch-registry: true
+    #是否注册
+    register-with-eureka: true
+    service-url:
+      #默认键的名字不能提示
+      defaultZone: http://admin:admin@localhost:1111/eureka
